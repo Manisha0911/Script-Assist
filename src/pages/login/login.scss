@@ -1,0 +1,45 @@
+@use '../../styles/abstracts/index.scss' as *;
+
+
+.login-container {
+    background-color: $greypurple;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(61, 76, 126, 0.15);
+  }
+  
+  .login-title {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 50%;
+    }
+  }
+
+  .login-subtitle {
+    color: $darkPurple;
+    text-align: center;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .login-button {
+    background-color: $darkblue;
+    color: white;
+    &:hover {
+      background-color: $midpurple;
+    }
+  }
