@@ -1,6 +1,6 @@
 import {StrictMode} from 'react'
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
+import { createHashRouter, Navigate, RouterProvider } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import App from './App';
 import Landing from './pages/dashboard/Landing';
@@ -41,7 +41,7 @@ export const routes = [
 	}
 ];
 
-const router = createBrowserRouter(routes);
+const router = createHashRouter(routes);
 
 const queryClient = new QueryClient({
 	defaultOptions: {
